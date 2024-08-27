@@ -1,0 +1,1993 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+    <style type="text/css">
+        @font-face {
+            font-family: DINRoundProB;
+            src: url(DINRoundPro-Bold.otf);
+        }
+
+        @font-face {
+            font-family: DINRoundProM;
+            src: url(DINRoundPro-Medium.otf);
+        }
+
+        @font-face {
+            font-family: DINRoundProL;
+            src: url(DINRoundPro-Light.otf);
+        }
+
+        @font-face {
+            font-family: Traveling;
+            src: url(TravelingTypewriter.otf);
+        }
+
+        body {
+            margin-left: 5vw;
+            margin-right: 7vw;
+        }
+
+
+        h1 {
+            font-family: DINRoundProB;
+            font-size: 2.3vw;
+            color: rgb(57, 172, 112);
+            margin-top: 0;
+
+        }
+
+        h2 {
+            font-family: DINRoundProB;
+            font-size: 1.97vw;
+            color: rgb(57, 172, 112);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-family: DINRoundProL;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1.525vw;
+            font-weight: 500;
+            color: rgb(88, 89, 91);
+        }
+
+        #mainImage {
+            width: 32vw;
+            height: 100%;
+            /* margin-left: 5vw; */
+        }
+
+        #image {
+            width: 16vw;
+            margin-right: -7vw;
+        }
+
+        .border {
+            border: .2vw solid rgb(57, 172, 112);
+            border-radius: 25px;
+            padding: 3vw;
+            margin-top: 1vw;
+            margin-top: 1.8vw;
+
+        }
+
+        .string {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 2vw;
+        }
+
+        .ai {
+            align-items: center;
+        }
+
+        .b0 {
+            bottom: 0;
+        }
+
+        .b4 {
+            bottom: 4vw;
+        }
+
+        .b15 {
+            bottom: 1.5vw;
+        }
+
+        .s0 {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .s1,
+        .s2,
+        .s3,
+        .s4,
+        .s5,
+        .s6,
+        .s7,
+        .s9,
+        .s10,
+        .s13,
+        .s20,
+        .s21,
+        .s22,
+        .s23,
+        .s24,
+        .s25,
+        .s27,
+        .s28,
+        .s28a,
+        .s29,
+        .s31,
+        .s32,
+        .s33,
+        .s34,
+        .s36,
+        .s38,
+        .s39a,
+        .s41,
+        .s42,
+        .s42a,
+        .s42b,
+        .s42c,
+        .s42d,
+        .s42e,
+        .s42f,
+        .s44,
+        .s48,
+        .s48a,
+        .s50a,
+        .s51a,
+        .s51b,
+        .s51c,
+        .s52,
+        .c1 {
+            position: relative;
+        }
+
+        .s15a {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .s17,
+        .s18 {
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+
+        .t05 {
+            top: 0.5vw;
+        }
+
+        .t1 {
+            top: 1vw;
+        }
+
+        .bold {
+            font-family: DINRoundProM;
+        }
+
+        .flex {
+            flex: 1;
+        }
+
+        .mt {
+            margin-top: 0.5vw;
+        }
+
+        .mt1 {
+            margin-top: 1vw;
+        }
+
+        .mt2 {
+            margin-top: 2vw;
+        }
+
+        .mt3 {
+            margin-top: 3vw;
+        }
+
+        .mt4 {
+            margin-top: 4vw;
+        }
+
+        #ml0 {
+            margin-left: 0vw;
+        }
+
+        .ml {
+            margin-left: 0.5vw;
+        }
+
+        .ml1 {
+            margin-left: 1vw;
+        }
+
+        .ml2 {
+            margin-left: 2vw;
+        }
+
+        .ml3 {
+            margin-left: 3vw;
+        }
+
+        .last {
+            font-family: DINRoundProL;
+            font-size: 1.2vw;
+            color: rgb(57, 172, 112);
+        }
+
+        .square {
+            border: 1px solid rgb(57, 172, 112);
+            width: 2.2vw;
+            height: 2.2vw;
+            margin-left: 1vw;
+            margin-right: 0.5vw;
+            /* margin-bottom: 2vw; */
+        }
+
+        hr {
+            border-top: 1px solid rgb(57, 172, 112);
+            margin: 2vw 2vw 0 1vw;
+        }
+
+        .table-grid {
+            grid-template-columns: 52vw 1fr 1fr 1fr;
+            grid-template-rows: auto 3.5vw 3.5vw 3.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+
+        .table-grid1 {
+            grid-template-columns: 1fr 4fr 1fr 4fr 1fr 5fr;
+            grid-template-rows: 2.5vw 2.5vw 2.5vw 2.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 1vw;
+            margin-bottom: 15vw;
+        }
+
+        .table-grid2 {
+            grid-template-columns: 2fr 1fr 2.7fr 2.3fr 2fr 2.2fr;
+            grid-template-rows: 6vw 4.5vw 4.5vw 4.5vw 4.5vw 4.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 2vw;
+        }
+
+        .table-grid3 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 2.5vw 4.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 2vw;
+        }
+
+        .table-grid4 {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 2.5vw 4.5vw 4.5vw 4.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 2vw;
+        }
+
+        .table-grid4a {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 2.5vw 4.5vw 4.5vw 4.5vw 4.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 2vw;
+        }
+
+        .table-grid5 {
+            grid-template-columns: 1fr 1.8fr 1.5fr 1.2fr;
+            grid-template-rows: 2.5vw 4.5vw 4.5vw 4.5vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 2vw;
+        }
+
+        .table-grid6 {
+            grid-template-columns: 6fr 1fr 1fr 1fr;
+            grid-template-rows: 4.5vw 3vw 3vw 3vw;
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+            margin-top: 2vw;
+        }
+
+        .table {
+            border: 1px solid rgb(57, 172, 112);
+            display: grid;
+        }
+
+        .table-flex {
+            border: 1px solid rgb(57, 172, 112);
+            display: flex;
+        }
+
+        .center {
+            text-align: center;
+            display: grid;
+        }
+
+        .center-child {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .pl {
+            padding-left: 0.5vw;
+        }
+
+        .thirteenth {
+            margin-top: 10vw;
+        }
+
+        .line {
+            position: relative;
+            left: 25vw;
+            top: -2vw;
+            border-top: 0.25vw solid rgb(57, 172, 112);
+            width: 32vw;
+        }
+
+        .relative-object {
+            position: absolute;
+            font-family: Traveling;
+            font-size: 1.7vw;
+            color: rgb(82, 6, 153);
+        }
+
+        blockquote {
+            display: none;
+        }
+
+        .application {
+            margin-top: -5vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script src="data.js"></script>
+
+    <div class="application">
+        <div class="page1">
+            <div class="string s0">
+                <img id="mainImage" src="https://wavelength.org.uk/wp-content/uploads/2019/04/fightloneliness.png" />
+                <div class="c1">
+                    <p style="font-size: 4vw;position: absolute;left: -10vw;top: -5vw;letter-spacing: -.5vw;">CODE</p>
+                    <p id="code" class="relative-object"
+                        style="font-size: 4vw;font-family: DINRoundProL;top: -5vw;font-weight: 300;">
+                    </p>
+                </div>
+                <img id="image" src="wave.png" />
+            </div>
+            <h1>
+                <!-- Page 1 of 9Form updated 12-2023For office use onlyDate received Approved by Date approved Equipment
+                provided
+                - TV / radio / tablet. Case no. Date delivered  -->
+                Application form for a radio, television or tablet on
+                behalf
+                of an individual
+            </h1>
+            <p>Please read the Guidance Notes available on the WaveLength website before making the application, and
+                ensure
+                that the
+                applicant can provide all the relevant information.<span class="bold"> Incomplete
+                    applications cannot be
+                    accepted.</span></p>
+            <p>If you are applying for a piece of technology for a person living in a hostel or temporary accommodation,
+                then it is more
+                appropriate to fill in a group application form. You can then make an individual application for the
+                applicant when living in their
+                own accommodation.</p>
+            <div class="border first">
+                <h2>Applicant&#39s details</h2>
+                <p>Please provide the contact details of the person on whose behalf you are making this application.
+                <p class="bold"> The address given here should be the address where the equipment will be delivered and
+                    installed.</p>
+                </p>
+
+                <div class="string s1">
+                    <p class="bold ">Title</p>
+                    <p id="wavelengthtitlefield" class="relative-object" style="left: 4vw;"></p>
+                    <hr style="width: 17.8vw;">
+                    <p class="bold ">First names</p>
+                    <p id="wavelengthfirstnamefield" class="relative-object" style="left: 35vw;"></p>
+                    <hr class="flex">
+                </div>
+
+                <div class="string s2">
+                    <p class="bold">Gender</p>
+                    <div class="square s1">
+                        <p id="Gender-Female" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Female</p>
+                    <div class="square s1">
+                        <p id="Gender-Male" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Male</p>
+                    <p class="bold" style="padding-left: 3.3vw">Surname</p>
+                    <hr class="flex">
+                    <p id="wavelengthfamilynamefield" class="relative-object" style="left: 35vw;"></p>
+                </div>
+                <div class="string s3">
+                    <div class="square s1" style="margin-left: 6.3vw">
+                        <p id="Gender-Prefernottosay" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Prefer not to say</p>
+                    <p class="bold" style="padding-left: 4vw">Previous names <span style="font-family: DINRoundProL">
+                            (if any)</span></p>
+                    <hr class="flex">
+                    <p id="wavelengthpreviousnamefield" class="relative-object" style="left: 43vw;"></p>
+                </div>
+                <div class="string s4">
+                    <p class="bold">Date of birth</p>
+                    <hr class="flex">
+                    <p id="wavelengthdateofbirthfield" class="relative-object" style="left: 20vw;"></p>
+                </div>
+                <p class="bold mt2">UK Residency Status <span style="font-family: DINRoundProL">(please see Guidance
+                        Notes for eligibility) Please tick
+                        all that apply:</span></p>
+                <div class="string s5">
+                    <div class="square s1" style="margin-left: 6vw;">
+                        <p id="UK_Residency_Status-BritishCitizen" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="margin-right: 2.5vw;">British citizen</p>
+                    <div class="square s1">
+                        <p id="UK_Residency_Status-Refugee" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Refugee</p>
+                    <div class="square s1" style="margin-left: 5vw;">
+                        <p id="UK_Residency_Status-Other(pleasestate)" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Other, please state</p>
+                    <hr class="flex">
+                    <p id="wavelengthotherresidencystatusfield" class="relative-object" style="left: 54vw;"></p>
+                </div>
+                <div class="string s6">
+                    <p class="bold">Addres</p>
+                    <hr class="flex">
+                    <p id="wavelengthaddressfield" class="relative-object" style="left: 8vw;"></p>
+                </div>
+                <hr class="mt4">
+                <div class="string s7">
+                    <p class="bold">County</p>
+                    <hr style="width: 38vw;">
+                    <p id="wavelengthcountyfield" class="relative-object" style="left: 8vw;"></p>
+                    <p class="bold">Postcode</p>
+                    <hr class="flex">
+                    <p id="wavelengthpostcodefield" class="relative-object" style="left: 55vw;"></p>
+                </div>
+                <div class="string s8">
+                    <p class="bold">Country</p>
+                    <div class="square s1">
+                        <p id="UK_Region-England" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="margin-right: 5.5vw;">England</p>
+                    <div class="square s1">
+                        <p id="UK_Region-NorthernIreland" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="margin-right: 5.5vw;">Northern Ireland</p>
+                    <div class="square s1">
+                        <p id="UK_Region-Wales" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="margin-right: 5.5vw;">Wales</p>
+                    <div class="square s1">
+                        <p id="UK_Region-Scotland" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Scotland</p>
+                </div>
+                <div class="string s9">
+                    <p class="bold">If resident of Greater London, which London Borough do you live in?</p>
+                    <hr class="flex">
+                    <p id="wavelengthlondonboroughfield" class="relative-object" style="left: 48vw;"></p>
+                </div>
+                <div class="string s10">
+                    <p class="bold">Phone number</p>
+                    <hr style="width: 22vw;">
+                    <p id="wavelengthphonenumberfield" class="relative-object" style="left: 14vw;"></p>
+                    <p class="bold">Email</p>
+                    <hr class="flex">
+                    <p id="wavelengthemailfield" class="relative-object" style="left: 42vw;"></p>
+                </div>
+                <div class="string s11">
+                    <p class="bold">Applicant&#8217s declaration</p>
+                </div>
+                <div class="string s12">
+                    <p style="margin-top: -2vw;">I have completed the WaveLength Impact Measurement Part 1 (page 2) and
+                        agree to provide
+                        feedback upon equipment
+                        provided and its benefits via Part 2 (page 9), to help WaveLength understand and promote the
+                        effectiveness of its
+                        work. I agree to take all reasonable steps to look after any equipment, provide feedback and
+                        co-operate with any third
+                        parties WaveLength is working with. For the purpose of the General Data Protection
+                        Regulation 2018, I agree to the
+                        information given to WaveLength being kept by them and shared with third parties to allow
+                        WaveLength to conduct its
+                        work.</p>
+                </div>
+                <div class="string s13">
+                    <p class="bold">Signed</p>
+                    <hr style="width: 37.5vw;">
+                    <p class="bold">Date</p>
+                    <hr class="flex">
+                    <p id="wavelengthapplicantsigndate" class="relative-object" style="left: 51vw;"></p>
+                </div>
+
+
+            </div>
+            <div class="border second">
+                <h2>For office use only</h2>
+                <div class="string s14">
+                    <p class="bold">Date received</p>
+                    <hr style="width: 10vw;">
+                    <p class="bold">Approved by</p>
+                    <hr class="flex">
+                    <p class="bold">Date approved</p>
+                    <hr class="flex">
+                </div>
+                <div class="string s15" style="margin-bottom: 1vw;">
+                    <p class="bold">Equipment provided - TV / radio / tablet. Case no.</p>
+                    <hr style="width: 14vw;">
+                    <p class="bold">Date delivered</p>
+                    <hr class="flex">
+                </div>
+            </div>
+            <div class="string s15a" style="margin: 2vw 0;">
+                <p class="last" style="margin-right: 27vw;">Page 1 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page2">
+            <h2 style="margin: 7vw 0 3vw;">Impact measurement: Part 1 - To be completed by Applicant </h2>
+            <p>In order to operate the WaveLength charity, understand the impact of our work on individuals, develop
+                and
+                improve WaveLength
+                charitable operations and to inform future decision making, we would like to collect data in
+                relation to
+                your health, as per
+                question 5 below and any further information about your health you provide to us in this form. We
+                need
+                your explicit consent to
+                process such information about you. You have the right to withdraw your consent at any time, except
+                to
+                the extent that action has
+                already been taken based on your consent, and that the withdrawal will not apply to information that
+                has
+                already been processed
+                based on your consent. Providing health data to us is entirely optional. If you do not consent,
+                please
+                do not make an application,
+                complete question 5 or provide any health data to us in this form.</p>
+            <div class="border third">
+                <div class="string s16">
+                    <div class="square s1" style="border: 1px solid rgb(237, 26, 59);">
+                        <p id="wavelengthhealthconsent" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="bold" style="color: rgb(237, 26, 59);">By ticking the box I consent to the processing
+                        of
+                        my
+                        health data for
+                        the purposes set out
+                        above.</p>
+                </div>
+                <p class="mt2">We will store and process personal data you have provided as set out in the
+                    WaveLength
+                    Privacy Notice
+                    available at:
+                    https://wavelength.org.uk/contact/privacy-cookies-wavelength-website/</p>
+                <p class="bold mt2">Please only tick the box that is closest to how you feel.</p>
+                <div class="table-grid">
+
+                    <div class="table"></div>
+                    <div class="table center">
+                        <p class="bold center-child " style="color: rgb(57, 172, 112);">Hardly ever
+                            or never</p>
+                    </div>
+                    <div class="table center">
+                        <p class="bold center-child" style="color: rgb(57, 172, 112);">Some of
+                            the time</p>
+                    </div>
+                    <div class="table center">
+                        <p class="bold center-child" style="color: rgb(57, 172, 112);">Often</p>
+                    </div>
+
+                    <div class="table" style="padding-left: 0.5vw;">
+                        <p class="bold center-child">1. How often do you feel that you lack companionship?</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Lack_Companionship-Hardlyeverornever" class="relative-object t05" style="left: 4.5vw;">
+                        </p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Lack_Companionship-Someofthetime" class="relative-object t05" style="left: 4.5vw;">
+                        </p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Lack_Companionship-Often" class="relative-object t05" style="left: 4.5vw;"></p>
+                    </div>
+
+                    <div class="table" style="padding-left: 0.5vw;">
+                        <p class="bold center-child">2. How often do you feel left out?</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Feeling_Left_Out-Hardlyeverornever" class="relative-object t05" style="left: 4.5vw;">
+                        </p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Feeling_Left_Out-Someofthetime" class="relative-object t05" style="left: 4.5vw;"></p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Feeling_Left_Out-Often" class="relative-object t05" style="left: 4.5vw;"></p>
+                    </div>
+
+                    <div class="table" style="padding-left: 0.5vw;">
+                        <p class="bold center-child">3. How often do you feel isolated from others?
+                        </p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Feeling_isolated-Hardlyeverornever" class="relative-object t05" style="left: 4.5vw;">
+                        </p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Feeling_isolated-Someofthetime" class="relative-object t05" style="left: 4.5vw;"></p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Feeling_isolated-Often" class="relative-object t05" style="left: 4.5vw;"></p>
+                    </div>
+
+                </div>
+                <p class="bold">4. How often do you feel lonely?</p>
+                <div class="string s17">
+                    <div class="square c1">
+                        <p id="Feeling_Lonely-Never" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Never</p>
+                    <div class="square c1">
+                        <p id="Feeling_Lonely-HardlyEver" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Hardly ever</p>
+                    <div class="square c1">
+                        <p id="Feeling_Lonely-Occasionally" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Occasionally</p>
+                    <div class="square c1">
+                        <p id="Feeling_Lonely-Someofthetime" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Some of the time</p>
+                    <div class="square c1">
+                        <p id="Feeling_Lonely-Often/always" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Often / always</p>
+                </div>
+                <p class="bold">5. In general, would you say that your health is</p>
+                <div class="string s18">
+                    <div class="square c1">
+                        <p id="General_Health-Poor" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Poor</p>
+                    <div class="square c1">
+                        <p id="General_Health-Fair" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Fair</p>
+                    <div class="square c1">
+                        <p id="General_Health-Good" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Good</p>
+                    <div class="square c1">
+                        <p id="General_Health-VeryGood" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Very good</p>
+                    <div class="square c1">
+                        <p id="General_Health-Excellent" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1;">Excellent</p>
+                </div>
+                <p class="bold">Please tick all that apply.</p>
+                <div class="table-grid1">
+
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Homeless" class="relative-object" style="left: 2vw;">
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Homeless</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Previouslyhomeless" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Previously homeless</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Domesticabuse" class="relative-object" style="left: 2vw;">
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Domestic abuse</p>
+                    </div>
+
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Victimoftorture" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Victim of torture</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Physicalimpairment" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Physical impairment</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Mentalimpairment" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Mental impairment</p>
+                    </div>
+
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Alzheimers/Dementia" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Alzheimers/dementia</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Learningdisability" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Learning disability</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Agerelatedvulnerabilites(55+)" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Age-related vulnerabilities (55+)</p>
+                    </div>
+
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Refugee" class="relative-object" style="left: 2vw;">
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Refugee</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Youngpeople(16-25)" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Young people (16-25)</p>
+                    </div>
+                    <div class="table c1">
+                        <p id="Current_situation_or_condition-Addiction/substancemisuse" class="relative-object"
+                            style="left: 2vw;"></p>
+                    </div>
+                    <div class="table">
+                        <p class="pl">Addiction/substance misuse</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="border fourth">
+                <div class="string s19" style="margin-top: -0.5vw;">
+                    <p class="bold">Your feedback is extremely important to us. Please tick if you are happy to be
+                        interviewed</p>
+                    <div class="square"></div>
+                </div>
+                <p class="bold" style="margin-top: 1.8vw;">Please tell us the best details to contact you on.</p>
+                <div class="string s20" style="margin-bottom: 7vw;">
+                    <p class="bold">Tel</p>
+                    <hr class="flex">
+                    <p id="wavelengthinterviewphonefield" class="relative-object" style="left: 5vw;"></p>
+                    <p class="bold">Email</p>
+                    <hr style="flex: 2.5;">
+                    <p id="wavelengthinterviewemailfield" class="relative-object" style="left: 35vw;"></p>
+                </div>
+            </div>
+
+            <div class="string s15a" style="margin: 7vw 0;">
+                <p class="last" style="margin-right: 27vw;">Page 2 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="border fifth">
+                <h1>Referrer details</h1>
+                <div class="string s21">
+                    <p class="bold">How do you know the applicant?</p>
+                    <hr class="flex">
+                    <p id="wavelengthknowapplicantfield" class="relative-object" style="left: 25vw;"></p>
+                </div>
+                <hr>
+                <div class="string s22">
+                    <p class="bold">Title</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrertitlefield" class="relative-object" style="left: 4vw;"></p>
+                    <p class="bold">First names</p>
+                    <hr style="flex: 2.5;">
+                    <p id="wavelengthreferrerfirstnamefield" class="relative-object" style="left: 35vw;"></p>
+                </div>
+                <div class="string s23">
+                    <p class="bold">Surname</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrerfamilynamefield" class="relative-object" style="left: 10vw;"></p>
+                </div>
+                <div class="string s24">
+                    <p class="bold">Job title</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrerjobfield" class="relative-object" style="left: 10vw;"></p>
+                </div>
+                <div class="string s25">
+                    <p class="bold">Name of referring organisation/body <span>(if any)</span></p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrerbodyfield" class="relative-object" style="left: 33vw;"></p>
+                </div>
+                <div class="string s26">
+                    <p class="bold">Orgatisation type</p>
+                    <div class="square s1">
+                        <p id="Organisation_Type-NotforProfit" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="bold">Not for Profit</p>
+                    <div class="square s1">
+                        <p id="Organisation_Type-PublicSector" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="bold">Public Sector</p>
+                    <div class="square s1">
+                        <p id="Organisation_Type-RegisteredCharity" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="bold">Registered Charity</p>
+                    <div class="square s1">
+                        <p id="Organisation_Type-OtherCharitable" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="bold">Other Charitable</p>
+                    <div class="square s1">
+                        <p id="Organisation_Type-Other" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="bold">Other</p>
+                </div>
+                <div class="string s27">
+                    <p class="bold">If other, please state</p>
+                    <hr style="flex: 1.6;">
+                    <p id="wavelengthotherbodyfield" class="relative-object" style="left: 16vw;"></p>
+                    <p class="bold">Charity number</p>
+                    <hr class="flex">
+                    <p id="wavelengthcharitynumberfield" class="relative-object" style="left: 61vw;"></p>
+                </div>
+                <div class="string s28">
+                    <p class="bold">Department and address</p>
+                    <hr class="flex">
+                    <p id="wavelengthdepartmentfield" class="relative-object" style="left: 19vw;"></p>
+                </div>
+                <div class="s28a">
+                    <hr class="mt4">
+                    <p id="wavelengthreferreraddressfield" class="relative-object b0" style="left: 3vw;"></p>
+                </div>
+                <div class="string s29">
+                    <p class="bold">County</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrercountyfield" class="relative-object" style="left: 8vw;"></p>
+                    <p class="bold">Post code</p>
+                    <hr style="flex: 1.3;">
+                    <p id="wavelengthreferrerpostcodefield" class="relative-object" style="left: 50vw;"></p>
+                </div>
+                <div class="string s30">
+                    <p class="bold">Country</p>
+                    <div class="square s1">
+                        <p id="Referrer_UK_Region-England" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">England</p>
+                    <div class="square s1">
+                        <p id="Referrer_UK_Region-NorthernIreland" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Northern Ireland</p>
+                    <div class="square s1">
+                        <p id="Referrer_UK_Region-Wales" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Wales</p>
+                    <div class="square s1">
+                        <p id="Referrer_UK_Region-Scotland" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Scotland</p>
+                </div>
+                <div class="string s31">
+                    <p class="bold">Phone number</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrerphonenumberfield" class="relative-object" style="left: 23vw;"></p>
+                </div>
+                <div class="string s32">
+                    <p class="bold">Mobile number</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrermobilenumberfield" class="relative-object" style="left: 23vw;"></p>
+                </div>
+                <div class="string s33">
+                    <p class="bold">Email <span>(must be provided)</span></p>
+                    <hr class="flex">
+                    <p id="wavelengthreferreremailfield" class="relative-object" style="left: 28vw;"></p>
+                </div>
+                <p class="bold">Referrer&#8217s declaration</p>
+                <p>I declare that the information provided is true to the best of my knowledge and I will inform
+                    WaveLength of any
+                    changes in circumstances, such as the applicant&#8217s change of address where reasonably
+                    possible.
+                    I
+                    agree to provide
+                    feedback upon equipment provided and its benefits, to help WaveLength understand and promote the
+                    effectiveness of
+                    its work and receive communications from WaveLength. For the purpose of the General Data
+                    Protection
+                    Regulation
+                    2018, I agree to the information given to WaveLength being kept by them and shared with third
+                    parties to allow
+                    WaveLength to conduct its work.</p>
+                <div class="string s34">
+                    <p class="bold">Signed</p>
+                    <hr style="flex: 2.1;">
+                    <p class="bold">Date</p>
+                    <hr class="flex">
+                    <p id="wavelengthreferrersigndate" class="relative-object" style="left: 61vw;"></p>
+                </div>
+                <p class="bold">Please tell us how you heard about us</p>
+                <div class="string s35">
+                    <div class="square s1">
+                        <p id="How_did_you_hear_about_us-Colleague" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Colleague</p>
+                    <div class="squar s1">
+                        <p id="How_did_you_hear_about_us-Onlinesearch" class="relative-object" style="left: .5vw;">
+                        </p>
+                    </div>
+                    <p class="flex">Online search</p>
+                    <div class="square s1">
+                        <p id="How_did_you_hear_about_us-Directory" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Directory</p>
+                    <div class="square s1">
+                        <p id="How_did_you_hear_about_us-Anotherorganisation" class="relative-object"
+                            style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1.5;">Another organisation</p>
+                    <div class="square s1">
+                        <p id="How_did_you_hear_about_us-Other(pleasestate)" class="relative-object"
+                            style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: .5;">Other</p>
+                </div>
+                <div class="string s36">
+                    <p class="bold">If other, please state</p>
+                    <hr class="flex">
+                    <p id="wavelengthotherheardaboutfield" class="relative-object" style="left: 20vw;"></p>
+                </div>
+
+            </div>
+            <div class="border sixth">
+                <h1>Previous applications</h1>
+                <div class="string s37">
+                    <p class="bold" style="flex: 6.5;">1a. Has the applicant applied to WaveLength before?</p>
+                    <div class="square s1">
+                        <p id="Applied_Before-Yes" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Yes</p>
+                    <div class="square s1">
+                        <p id="Applied_Before-No" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 3.5;">No</p>
+                </div>
+                <div class="string s38">
+                    <p class="bold">1b. If yes, please give the date and outcome of the
+                        application</p>
+                    <hr class="flex">
+                    <p id="wavelengthoutcomefield" class="relative-object" style="left: 44vw;"></p>
+                </div>
+                <hr class="mt4">
+            </div>
+            <div class="string s15a" style="margin: 3vw 0 7.5vw;">
+                <p class="last" style="margin-right: 27vw;">Page 3 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="border seventh">
+                <h2>Applicant&#8217s accommodation</h2>
+                <div class="string s39">
+                    <p class="bold">1.&nbsp The applicant&#8217s accommodation is</p>
+                    <div class="square s1">
+                        <p id="Accommodation-Rented" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Rented</p>
+                    <div class="square s1">
+                        <p id="Accommodation-Ownedbyoccupier" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Owned by occupier</p>
+                    <div class="square s1">
+                        <p id="Accommodation-Hostel" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Hostel</p>
+                    <div class="square s1">
+                        <p id="Accommodation-Temporaryaccommodation" class="relative-object" style="left: .5vw;">
+                        </p>
+                    </div>
+                    <p>Temporary accommodation</p>
+                </div>
+
+                <p class="mt2"><span class="bold">
+                        2. &nbsp In what type of accommodation does the applicant live?
+                    </span> e.g. house,
+                    downstairs
+                    flat, sheltered, supported</p>
+                <p>&nbsp &nbsp &nbsp housing.</p>
+                <div class="s39a">
+                    <hr class="ml3 mt3">
+                    <p id="wavelengthhousingtypefield" class="relative-object b0" style="left: 12vw;"></p>
+                </div>
+                <p class="bold mt1">3a.&nbsp Is the applicant a tenant of a social organisation
+                    such as a housing
+                    association
+                    /
+                    social landlord?</p>
+                <div class="string s40 ml2">
+                    <div class="square c1">
+                        <p id="Tenant-Yes" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Yes</p>
+                    <div class="square c1">
+                        <p id="Tenant-No" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>No</p>
+                </div>
+
+                <p class="mt1 ml1"><span class="bold">b. Please provide details of the organisation, including any
+                        particular
+                        specialism,
+                    </span>e.g. elderly care, mental health,
+                </p>
+                <p style="margin-left: 2.7vw;">moving out of homelessness.</p>
+                <div class="string s41">
+                    <p class="bold ml3">Organisation name</p>
+                    <hr class="flex">
+                    <p id="wavelengthorganisationnamefield" class="relative-object" style="left: 24vw;"></p>
+                </div>
+                <div class="string s42">
+                    <p class="bold ml3">What does the organisation do?</p>
+                    <hr class="flex">
+                    <p id="wavelengthorganisationspecialism" class="relative-object" style="left: 33vw;"></p>
+                </div>
+                <p class="bold ml3 mt1">If the applicant is living in temporary, sheltered or supported
+                    accommodation,
+                    please
+                    provide details on when
+                    you think they will be moving on.</p>
+                <div class="s42a">
+                    <hr class="mt4 ml3">
+                    <p id="wavelengthmovingonfield" class="relative-object b0" style="left: 9vw;"></p>
+                </div>
+                <p class="bold ml3 mt1">If you are applying for a piece of technology from a hostel, then it is more
+                    appropriate
+                    to fill in a group
+                    application form. You can then make an individual application for the applicant when living
+                    independently.</p>
+                <p class="mt2"><span class="bold">4.&nbsp &nbsp Please state why they, or you, cannot supply a
+                        television / radio /
+                        tablet.
+                    </span>(Please do not say &#34not within our
+                </p>
+                <p style="margin-left: 2.7vw;">remit&#34 or &#34something the organisation does not do&#34. See
+                    Guidance
+                    Notes).</p>
+                <div class="s42b">
+                    <hr class="mt4 ml3">
+                    <p id="wavelengthwhyyoucannotfield" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+                <hr class="mt4 ml3">
+                <hr class="mt4 ml3" style="margin-bottom: 0.6vw;">
+            </div>
+
+            <div class="border eighth">
+                <h2>Delivery</h2>
+                <p class="bold mt2">1.&nbsp &nbsp Is the applicant disabled?</p>
+                <p style="margin-left: 2.7vw;">Please tell us about the nature of the impairment and whether it may
+                    affect the
+                    delivery
+                    of
+                    equipment.</p>
+                <div class="s42c">
+                    <hr class="mt4 ml3">
+                    <p id="Is_the_applicant_disabled" class="relative-object b4" style="left: 7vw;"></p>
+
+                    <hr class="mt4 ml3">
+                    <p id="wavelengthapplicantdisabledinformationfield" class="relative-object b0" style="left: 7vw;">
+                    </p>
+                </div>
+                <hr class="mt4 ml3">
+                <hr class="mt4 ml3">
+                <p class="bold mt2">2.&nbsp &nbsp Contact name and phone number <span> for the best person to
+                        discuss
+                        delivery
+                        arrangements. If you are requesting a</span></p>
+                <p style="margin-left: 2.7vw;">tablet, please give your mobile number.</p>
+                <div class="s42d">
+                    <hr class="mt4" style="margin-left: 2.7vw;">
+                    <p id="wavelengthdeliverynamefield" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+                <p class="bold mt2">3.&nbsp &nbsp Could the location pose difficulties in delivery? <span> (We are
+                        unable to
+                        install or
+                        set-up equipment).</span></p>
+                <div class="s42e">
+                    <hr class="mt4" style="margin-left: 2.7vw;">
+                    <p id="wavelengthdifficultdeliveryfield" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+            </div>
+            <div class="string s15a" style="margin: 2vw 0 7.5vw;">
+                <p class="last" style="margin-right: 27vw;">Page 4 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page5">
+            <div class="border nineth">
+                <h2>Further applicant information</h2>
+                <p class="bold mt2">1.&nbsp &nbsp Why does the applicant need a television, radio or tablet?</p>
+                <p style="margin-left: 2.7vw;">Why and how would this improve the applicant&#8217s life? How will it
+                    help them to move
+                    forward over
+                    the
+                    next three
+                    years? (We expect the applicant to be generally restricted to their own home for reasons
+                    including
+                    but not
+                    limited to age, disability or poor health, resulting in loneliness).</p>
+                <div class="s42f">
+                    <hr class="mt4" style="margin-left: 2.7vw;">
+                    <p id="wavelengthwhyneed" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <div class="string s43">
+                    <p class="bold" style="margin-right: 4.5vw;">2a.&nbsp Has the applicant had a television,
+                        radio or tablet
+                        before?</p>
+                    <div class="square s1">
+                        <p id="Has_the_application_had_equipment_before-Yes" class="relative-object"
+                            style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Yes</p>
+                    <div class="square s1">
+                        <p id="Has_the_application_had_equipment_before-No" class="relative-object" style="left: .5vw;">
+                        </p>
+                    </div>
+                    <p class="flex">No</p>
+                </div>
+                <div class="string s44">
+                    <p class="bold">b.&nbsp &nbsp If yes, when and what happened to it?</p>
+                    <hr class="flex">
+                    <p id="wavelengthwhathappened" class="relative-object" style="left: 33vw;"></p>
+                </div>
+                <hr class="flex mt4" style="margin-left: 2.7vw;">
+            </div>
+            <div class="border tenth">
+                <h2>Equipment provision</h2>
+                <p class="mt2"><span class="bold">1.&nbsp &nbsp What equipment is being requested?</span> Please
+                    tick <span class="bold">ONE</span>
+                    box.</span>
+                </p>
+                <p style="margin-left: 2.7vw;">(WaveLength aims to help and support people with their first set, but
+                    an
+                    aerial is required for
+                    all
+                    televisions).</p>
+                <div class="string s45">
+                    <div class="square s1" style="margin-left: 2.7vw;">
+                        <p id="Kit_Wanted-DigitalTVwithFreeview(upto24inch)" class="relative-object"
+                            style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 2.4;">Digital TV with Freeview (up to 24 inch)</p>
+                    <div class="square s1">
+                        <p id="Kit_Wanted-Radio" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Radio</p>
+                    <div class="square s1">
+                        <p id="Kit_Wanted-Tablet" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 2.35;">Tablet</p>
+                </div>
+                <div class="string s46">
+                    <p class="bold" style="flex: 2.85;">2a.&nbsp Which type of aerial is currently in place?</p>
+                    <div class="square s1">
+                        <p id="Existing_Aerial-Set-top" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Set-top</p>
+                    <div class="square s1">
+                        <p id="Existing_Aerial-Roof-top" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Roof-top</p>
+                    <div class="square s1">
+                        <p id="Existing_Aerial-Communal" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Communal</p>
+                </div>
+                <p class="bold ml1 mt2">b.&nbsp Does the applicant have</p>
+                <div class="string s47">
+                    <div class="square s1" style="margin-left: 2.7vw;">
+                        <p id="Existing_Services-Sky" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Sky</p>
+                    <div class="square s1">
+                        <p id="Existing_Services-Virgin" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Virgin</p>
+                    <div class="square s1">
+                        <p id="Existing_Services-Cable" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Cable</p>
+                    <div class="square s1">
+                        <p id="Existing_Services-Satellite" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Satellite</p>
+                    <div class="square s1">
+                        <p id="Existing_Services-Paidforstreaming/subscriptionservices" class="relative-object"
+                            style="left: .5vw;"></p>
+                    </div>
+                    <p>Paid for streaming/subscription services</p>
+                    <div class="square s1">
+                        <p id="Existing_Services-Internetaccess" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p>Internet access</p>
+                </div>
+                <div class="string s48">
+                    <p class="bold ml1">c.&nbsp If yes to above, please state who pays for the service</p>
+                    <hr class="flex" style="margin-left: 2.7vw;">
+                    <p id="wavelengthwhopays" class="relative-object" style="left: 45vw;"></p>
+                </div>
+                <p class="bold ml1 mt2">d.&nbsp If the applicant does not currently have an aerial, how will they
+                    provide
+                    one to
+                    use
+                    with their TV set?</p>
+                <div class="s48a">
+                    <hr class="mt4">
+                    <p id="wavelengthaerialprovision" class="relative-object b0" style="left: 10vw;"></p>
+                </div>
+                <p class="bold mt2">If applying for a TV:</p>
+                <div class="string s49">
+                    <p class="bold" style="flex: 4.5;">3a.&nbsp Does the application have a current TV licence?</p>
+                    <div class="square s1">
+                        <p id="TV_Licence-Yes" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Yes</p>
+                    <div class="square s1">
+                        <p id="TV_Licence-No" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 1.7;">No</p>
+                </div>
+                <p style="margin-left: 2.7vw;">(If applying for a television, the applicant should be able to
+                    provide
+                    their own television
+                    licence).
+                </p>
+                <div class="string s50">
+                    <p class="ml1"><span class="bold">b.&nbsp If yes,</span> please give expiry date of current TV
+                        licence</p>
+                    <div class="flex s50a">
+                        <hr>
+                        <p id="wavelengthlicenceexpirefield" class="relative-object b0" style="left: 3vw;"></p>
+                    </div>
+                    <div style="flex: 2;"></div>
+                </div>
+                <p class=" ml1 mt2"><span class="bold">c.&nbsp If no,</span> how will they provide one to use with
+                    their
+                    TV set? (There
+                    are
+                    a
+                    number
+                    of different schemes available to
+                    help those who might find this financially difficult. See Guidance Notes).</p>
+                <div class="s50a">
+                    <hr class="mt4">
+                    <p id="wavelengthtvlicenceprovision" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+            </div>
+            <div class="string s15a" style="margin: 3vw 0 8vw;">
+                <p class="last" style="margin-right: 27vw;">Page 5 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page6">
+            <div class="border eleventh" style="padding-bottom: 4vw;">
+                <h2>Loneliness</h2>
+                <div class="string s51">
+                    <p class="bold" style="flex: 1.85;">1a.&nbsp Does the applicant live alone?</p>
+                    <div class="square s1">
+                        <p id="Live_Alone-Yes" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p class="flex">Yes</p>
+                    <div class="square s1">
+                        <p id="Live_Alone-No" class="relative-object" style="left: .5vw;"></p>
+                    </div>
+                    <p style="flex: 2.35;">No</p>
+                </div>
+                <p class="bold ml1 mt2">b.&nbsp If no, please provide details of all people living
+                    with the applicant.</p>
+
+                <div class="table-grid2">
+
+                    <div class="table">
+                        <p class="bold mt ml" style="font-size: 1.3vw;">Name</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold mt ml" style="font-size: 1.3vw;">Age</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold ml mt" style="font-size: 1.3vw;">Relationship <br />
+                            to the applicant</p>
+                    </div>
+                    <div class="table">
+                        <p class="ml mt" style="font-size: 1.3vw;"><span class="bold">Employment</span> (if any)</p>
+                    </div>
+                    <div class="table">
+                        <p class="ml mt" style="font-size: 1.3vw;"><span class="bold">Benefits<br />
+                                received and<br />
+                                amount </span>(weekly)</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold ml mt" style="font-size: 1.3vw;">Weekly<br />
+                            contribution<br />
+                            to household</p>
+                    </div>
+
+
+                    <div class="table s1">
+                        <p id="Name0" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Age0" class="relative-object b15" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Relationshiptotheapplicant0" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Employmentifany0" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Benefitsreceivedandamountifany0" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Weeklycontributiontohousehold0" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Name1" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Age1" class="relative-object b15" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Relationshiptotheapplicant1" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Employmentifany1" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Benefitsreceivedandamountifany1" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Weeklycontributiontohousehold1" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Name2" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Age2" class="relative-object b15" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Relationshiptotheapplicant2" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Employmentifany2" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Benefitsreceivedandamountifany2" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Weeklycontributiontohousehold2" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Name3" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Age3" class="relative-object b15" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Relationshiptotheapplicant3" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Employmentifany3" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Benefitsreceivedandamountifany3" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Weeklycontributiontohousehold3" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Name4" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Age4" class="relative-object b15" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Relationshiptotheapplicant4" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Employmentifany4" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Benefitsreceivedandamountifany4" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Weeklycontributiontohousehold4" class="relative-object b15" style="left: 1vw;"></p>
+                    </div>
+                </div>
+                <p class="bold mt4">2.&nbsp &nbsp How much contact does the applicant have with family and friends
+                    who
+                    are
+                    not
+                    living with them?</p>
+                <p style="margin-left: 2.7vw;">e.g. on a weekly, monthly, yearly basis</p>
+                <div class="s51a">
+                    <hr class="mt4" style="margin-left: 2.7vw;">
+                    <p id="wavelengthhowmuchcontact" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <p class="bold mt2">3.&nbsp &nbsp Please describe what practical and financial support the family
+                    provides.
+                </p>
+                <div class="s51b">
+                    <hr class="mt4" style="margin-left: 2.7vw;">
+                    <p id="wavelengthfamilysupport" class="relative-object b0" style="left: 7vw;"></p>
+                </div>
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+                <hr class="mt4" style="margin-left: 2.7vw;">
+            </div>
+            <div class="string s15a" style="margin: 2vw 0 8vw;">
+                <p class="last" style="margin-right: 27vw;">Page 6 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page7">
+            <div class="border tvelvth">
+                <h2>Financial situation of applicant and household</h2>
+                <p class="mt2"><span class="bold">1a.&nbsp Is the applicant in paid employment?</span> If so, give
+                    details including
+                    their
+                    monthly income.</p>
+                <div class="s51c">
+                    <hr class="mt4" style="margin-left: 2.7vw;">
+                    <p id="wavelengthpaidemployment" class="relative-object b0" style="left: 6vw;"></p>
+                </div>
+                <div class="string s52">
+                    <p class="ml"><span class="bold">b.&nbsp Previous employment</span> (if any)</p>
+                    <hr class="flex">
+                    <p id="wavelengthpreviousemployment" class="relative-object" style="left: 25vw;"></p>
+                </div>
+                <p class="bold mt2">2.&nbsp &nbsp What savings and non-employment income does the applicant have?
+                </p>
+                <div class="table-grid3">
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Savings</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Capital holdings</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Investments</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Pensions</p>
+                    </div>
+
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="Savingsinpounds0" class="relative-object t1" style="left: 9vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="CapitalHoldingsinpounds0" class="relative-object t1" style="left: 9vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="Investmentsinpounds0" class="relative-object t1" style="left: 9vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="Pensionsinpounds0" class="relative-object t1" style="left: 9vw;"></p>
+                    </div>
+                </div>
+                <p style="margin-top: 3.5vw;"><span class="bold">3.&nbsp &nbsp What debts and loans does the
+                        applicant
+                        have?</span>
+                    (This
+                    includes
+                    any
+                    mortgage
+                    on
+                    property owned).</p>
+
+                <div class="table-grid4">
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Creditor</p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Reason for / Nature of debt</p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Amount</p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Creditor0" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="ReasonforNatureofdebt0" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="Amountinpounds0" class="relative-object t1" style="left: 11vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Creditor1" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="ReasonforNatureofdebt1" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="Amountinpounds1" class="relative-object t1" style="left: 11vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Creditor2" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="ReasonforNatureofdebt2" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">&pound</p>
+                        <p id="Amountinpounds2" class="relative-object t1" style="left: 11vw;"></p>
+                    </div>
+                </div>
+                <p class="bold mt4">4.&nbsp &nbsp List of all benefits currently received by applicant. Please
+                    attach
+                    copy
+                    of
+                    current
+                    award letters / statements.</p>
+                <div class="table-grid4a">
+
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Benefit Name</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Amount per week or month</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Time Period & Review date</p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Benefitname0" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table-flex s1">
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;">&pound</p>
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;"> per</p>
+                        <p id="Amountpleasespecifyperweekorpermonth0" class="relative-object t1" style="left: 5vw;">
+                        </p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Reviewdate0" class="relative-object t1" style="left: 7vw;"></p>
+                    </div>
+
+
+                    <div class="table s1">
+                        <p id="Benefitname1" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table-flex s1">
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;">&pound</p>
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;"> per</p>
+                        <p id="Amountpleasespecifyperweekorpermonth1" class="relative-object t1" style="left: 5vw;">
+                        </p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Reviewdate1" class="relative-object t1" style="left: 7vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Benefitname2" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table-flex s1">
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;">&pound</p>
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;"> per</p>
+                        <p id="Amountpleasespecifyperweekorpermonth2" class="relative-object t1" style="left: 5vw;">
+                        </p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Reviewdate2" class="relative-object t1" style="left: 7vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Benefitname3" class="relative-object t1" style="left: 2vw;"></p>
+                    </div>
+                    <div class="table-flex s1">
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;">&pound</p>
+                        <p class="bold center-child ml flex" style="font-size: 1.5vw;"> per</p>
+                        <p id="Amountpleasespecifyperweekorpermonth3" class="relative-object t1" style="left: 5vw;">
+                        </p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Reviewdate3" class="relative-object t1" style="left: 7vw;"></p>
+                    </div>
+
+                </div>
+                <p class="bold mt4">5.&nbsp &nbsp Applications to other charities on behalf of this individual or
+                    household.
+                </p>
+                <div class="table-grid5">
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Charity</p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Reason / objective of application
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="bold center-child ml" style="font-size: 1.5vw;">Amount requested / given</p>
+                    </div>
+                    <div class="table">
+                        <p class="center-child ml" style="font-size: 1.5vw;"><span class="bold">Outcome</span> (if
+                            known)</p>
+                    </div>
+
+
+
+
+
+                    <div class="table s1">
+                        <p id="Charity0" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="ReasonObjectiveofapplication0" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Amountrequestedgiven0" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Outcomeifknown0" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Charity1" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="ReasonObjectiveofapplication1" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Amountrequestedgiven1" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Outcomeifknown1" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+
+                    <div class="table s1">
+                        <p id="Charity2" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="ReasonObjectiveofapplication2" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Amountrequestedgiven2" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                    <div class="table s1">
+                        <p id="Outcomeifknown2" class="relative-object" style="left: 1vw;"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="string s15a" style="margin: 15vw 0 8vw;">
+                <p class="last" style="margin-right: 27vw;">Page 7 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page8">
+            <div class="border twelfth">
+                <h2>Financial situation of applicant and household (continued)</h2>
+                <p class="mt2">In order to process this application, please provide us with copies of:</p>
+                <div class="row ml3 mt2">
+                    <p>3 months of all bank / building society / post office account statements and</p>
+                    <p>all current benefit award statements / letters.</p>
+                    <p class="mt1">All pages must be included.</p>
+                </div>
+            </div>
+            <div class="border thirteenth">
+                <h2>Checklist</h2>
+                <p class="bold mt">If you do not provide all the documentation requested, we cannot process this
+                    application.</p>
+                <div class="string s53 mt3 ai">
+                    <div class="square"></div>
+                    <p>Guidance Notes read in order to complete form accurately</p>
+                </div>
+                <div class="string s54 ai">
+                    <div class="square"></div>
+                    <p>All sections of form completed</p>
+                </div>
+                <div class="string s55 ai">
+                    <div class="square"></div>
+                    <p>Form signed by applicant and referrer</p>
+                </div>
+                <div class="string s56 ai">
+                    <div class="square"></div>
+                    <p>Copy of birth certificate, passport or documents referring to residency status enclosed
+                        <br /> (necessary for all applications)
+                    </p>
+                </div>
+                <div class="string s57 ai">
+                    <div class="square"></div>
+                    <p>Copy of current benefit award statements / letters enclosed</p>
+                </div>
+                <div class="string s58 ai">
+                    <div class="square"></div>
+
+                    <p>Copies of 3 months of all bank /building society / post office account statements
+                        enclosed
+                    </p>
+                </div>
+                <div class="string s59 ai">
+                    <div class="square"></div>
+                    <p>Impact measurement Part 1 completed by applicant (page 2)</p>
+                </div>
+                <p class="mt2">Please keep Impact measurement Part 2 (page 9) for the applicant to complete after 1
+                    month
+                    and
+                    return
+                    to <br />
+                    WaveLength.</p>
+            </div>
+            <div class="border fourteenth" style="margin-top: 11vw;">
+                <h2>Please return your completed form to:</h2>
+                <p style="margin-top: 1.2vw;">WaveLength Charity</p>
+                <p class="mt">47-51 Norfolk Street</p>
+                <p class="mt">Cambridge</p>
+                <p class="mt">CB1 2LD</p>
+            </div>
+            <div class="string s15a" style="margin: 13.5vw 0 8vw;">
+                <p class="last" style="margin-right: 27vw;">Page 8 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+        <div class="page9">
+            <h2>Individual impact measurement: Part 2</h2>
+            <div class="row1">
+                <h2 style="margin-top: 1.5vw;">To be completed by applicant 1 month after receipt of technology.
+                </h2>
+                <hr class="line">
+            </div>
+            <p>In order to operate the WaveLength charity, understand the impact of our work on individuals,
+                develop
+                and
+                improve WaveLength
+                charitable operations and to inform future decision making, we would like to collect data in
+                relation to
+                your health, as per
+                question 5 below and any further information about your health you provide to us in this form.
+                We
+                need
+                your explicit consent to
+                process such information about you. You have the right to withdraw your consent at any time,
+                except
+                to
+                the extent that action has
+                already been taken based on your consent, and that the withdrawal will not apply to information
+                that
+                has
+                already been processed
+                based on your consent. Providing health data to us is entirely optional. If you do not consent,
+                please
+                do not make an application,
+                complete question 5 or provide any health data to us in this form.</p>
+            <div class="border fifteenth">
+                <div class="string s60 ai" style="margin-top: 0;">
+                    <div id="ml0" class="square" style="border: 1px solid rgb(237, 26, 59);"></div>
+                    <p class="bold" style="color:  rgb(237, 26, 59);">By ticking the box I consent to the processing
+                        of
+                        my
+                        health data for the
+                        purposes set out above.</p>
+                </div>
+                <p class="mt2">We will store and process personal data you have provided as set out in the
+                    WaveLength
+                    Privacy
+                    Notice available at:
+                    https://wavelength.org.uk/contact/privacy-cookies-wavelength-website/</p>
+
+                <p class="bold mt2">Please only tick the box that is closest to how you feel.</p>
+                <div class="table-grid6">
+                    <div class="table"></div>
+                    <div class="table center">
+                        <p class="bold center-child ml" style="color: rgb(57, 172, 112);">
+                            Hardly ever
+                            or never</p>
+                        </p>
+                    </div>
+                    <div class="table center">
+                        <p class="bold center-child ml" style="color: rgb(57, 172, 112);">
+                            Some of<br />
+                            the time</p>
+                    </div>
+                    <div class="table center">
+                        <p class="bold center-child ml" style="color: rgb(57, 172, 112);">
+                            Often</p>
+                    </div>
+
+
+
+                    <div class="table" style="padding-left: 0.5vw;">
+                        <p class="bold  center-child">1. How often do you feel that you lack companionship?</p>
+                    </div>
+                    <div class="table"></div>
+                    <div class="table"></div>
+                    <div class="table"></div>
+
+                    <div class="table" style="padding-left: 0.5vw;">
+                        <p class="bold  center-child">2. How often do you feel left out?</p>
+                    </div>
+                    <div class="table"></div>
+                    <div class="table"></div>
+                    <div class="table"></div>
+
+                    <div class="table" style="padding-left: 0.5vw;">
+                        <p class="bold center-child">3. How often do you feel isolated from others?</p>
+                    </div>
+                    <div class="table"></div>
+                    <div class="table"></div>
+                    <div class="table"></div>
+
+                </div>
+                <p class="bold mt2">4. How often do you feel lonely?</p>
+                <div class="string s61">
+                    <div class="square"></div>
+                    <p class="flex">Never</p>
+                    <div class="square"></div>
+                    <p class="flex">Hardly ever</p>
+                    <div class="square"></div>
+                    <p class="flex">Occasionally</p>
+                    <div class="square"></div>
+                    <p class="flex">Some of the time</p>
+                    <div class="square"></div>
+                    <p class="flex">Often / always</p>
+                </div>
+                <p class="bold mt2">5. In general, would you say that your health is</p>
+                <div class="string s62">
+                    <div class="square"></div>
+                    <p class="flex">Poor</p>
+                    <div class="square"></div>
+                    <p class="flex">Fair</p>
+                    <div class="square"></div>
+                    <p class="flex">Good</p>
+                    <div class="square"></div>
+                    <p class="flex">Very good</p>
+                    <div class="square"></div>
+                    <p class="flex">Excellent</p>
+                </div>
+                <div class="string s63">
+                    <p class="bold">Name</p>
+                    <hr class="flex">
+                </div>
+                <div class="string s64">
+                    <p class="bold">Signed</p>
+                    <hr style="flex: 2;">
+                    <p class="bold">Date</p>
+                    <hr class="flex">
+                </div>
+            </div>
+            <div class="border sixteenth">
+                <p class="bold">Please add any further comments you might have and write about the difference
+                    that
+                    the
+                    equipment has made to
+                    your life.</p>
+                <hr class="mt4">
+                <hr class="mt4">
+                <hr class="mt4">
+                <hr class="mt4">
+                <hr class="mt4">
+                <p class="bold mt3">Please send this form back to:</p>
+                <div class="string s65" style="justify-content: space-between;">
+                    <p>WaveLength Charity, 47-51 Norfolk Street, Cambridge, CB1 2LD</p>
+                    <p class="bold">Thank you for your help</p>
+                </div>
+            </div>
+            <div class="string s15a" style="margin: 2.5vw 0;">
+                <p class="last" style="margin-right: 27vw;">Page 9 of 9</p>
+                <p>Form updated 12-2023</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        let createElement = {};
+        let arrElements = [];
+        let arrExceptions = ["Gender", "UK_Region", "Lack_Companionship", "Feeling_Left_Out", "Feeling_isolated", "Feeling_Lonely", "General_Health", "Organisation_Type", "Referrer_UK_Region", "How_did_you_hear_about_us", "Applied_Before", "Accommodation", "Tenant", "Has_the_application_had_equipment_before", "Kit_Wanted", "Existing_Aerial", "TV_Licence", "Live_Alone"]
+        let arrIncorrectElements = ["Existing_Services-Sky", "Existing_Services-Virgin", "Existing_Services-Cable", "Existing_Services-Satellite", "Existing_Services-Paidforstreaming/subscriptionservices", "Existing_Services-Internetaccess", "Current_situation_or_condition-Homeless", "Current_situation_or_condition-Previouslyhomeless", "Current_situation_or_condition-Alzheimers/Dementia", "Current_situation_or_condition-Learningdisability", "Current_situation_or_condition-Agerelatedvulnerabilites(55+)", "Current_situation_or_condition-Addiction/substancemisuse", "Current_situation_or_condition-Domesticabuse", "Current_situation_or_condition-Victimoftorture", "Current_situation_or_condition-Physicalimpairment", "Current_situation_or_condition-Mentalimpairment", "Current_situation_or_condition-Refugee", "Current_situation_or_condition-Youngpeople(16-25)", "UK_Residency_Status-Refugee", "UK_Residency_Status-BritishCitizen", "UK_Residency_Status-Other(pleasestate)", "wavelengthhealthconsent"];
+        const arrEm = document.querySelectorAll("tr");
+
+        arrEm.forEach((element) => {
+
+            createElement.id = element.firstElementChild.firstElementChild.textContent;
+            createElement.value = element.lastElementChild.textContent;
+            if (arrIncorrectElements.linght !== 0) {
+                arrIncorrectElements.forEach((incorrectElement) => {
+                    if (createElement.id == incorrectElement) {
+                        createElement.value = "X";
+                        indexIncorrectElement = arrIncorrectElements.indexOf(incorrectElement);
+                        arrIncorrectElements.splice(indexIncorrectElement, 1);
+                    }
+                });
+            }
+
+            if (arrExceptions.linght !== 0) {
+                arrExceptions.forEach((elementException) => {
+                    if (createElement.id == elementException) {
+                        createElement.id = createElement.id + "-" + createElement.value;
+                        createElement.value = "X";
+                        indexElementException = arrExceptions.indexOf(elementException);
+                        arrExceptions.splice(indexElementException, 1);
+                    }
+                });
+            }
+
+            document.getElementById(`${createElement.id}`).innerHTML = createElement.value;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
