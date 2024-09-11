@@ -360,6 +360,20 @@
         .application {
             margin-top: -5vw;
         }
+
+        /* delete button */
+        button {
+            position: absolute;
+            top: 8vw;
+            left: 37vw;
+            height: 7vw;
+            width: 12vw;
+            border: 0.2vw solid;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
     </style>
 
 </head>
@@ -1506,7 +1520,8 @@
         <div class="page7">
             <div class="border tvelvth">
                 <h2>Financial situation of applicant and household</h2>
-                <p class="mt2"><span class="bold">1a.&nbsp Is the applicant in paid employment?</span> If so, give
+                <p class="mt2"><span class="bold">1a.&nbsp Is the applicant in paid employment?</span> If so,
+                    give
                     details including
                     their
                     monthly income.</p>
@@ -1959,6 +1974,7 @@
                 <p>Form updated 12-2023</p>
             </div>
         </div>
+        <button type="button" onclick="Pat()">Pat must <br> push here.</button> //delete
     </div>
 
     <script>
@@ -1967,10 +1983,13 @@
         let arrElements = [];
         let arrExceptions = ["Gender", "UK_Region", "Lack_Companionship", "Feeling_Left_Out", "Feeling_isolated", "Feeling_Lonely", "General_Health", "Organisation_Type", "Referrer_UK_Region", "How_did_you_hear_about_us", "Applied_Before", "Accommodation", "Tenant", "Has_the_application_had_equipment_before", "Kit_Wanted", "Existing_Aerial", "TV_Licence", "Live_Alone"]
         let arrIncorrectElements = ["Existing_Services-Sky", "Existing_Services-Virgin", "Existing_Services-Cable", "Existing_Services-Satellite", "Existing_Services-Paidforstreaming/subscriptionservices", "Existing_Services-Internetaccess", "Current_situation_or_condition-Homeless", "Current_situation_or_condition-Previouslyhomeless", "Current_situation_or_condition-Alzheimers/Dementia", "Current_situation_or_condition-Learningdisability", "Current_situation_or_condition-Agerelatedvulnerabilites(55+)", "Current_situation_or_condition-Addiction/substancemisuse", "Current_situation_or_condition-Domesticabuse", "Current_situation_or_condition-Victimoftorture", "Current_situation_or_condition-Physicalimpairment", "Current_situation_or_condition-Mentalimpairment", "Current_situation_or_condition-Refugee", "Current_situation_or_condition-Youngpeople(16-25)", "UK_Residency_Status-Refugee", "UK_Residency_Status-BritishCitizen", "UK_Residency_Status-Other(pleasestate)", "wavelengthhealthconsent"];
+        let arrDataForPat = [];  //delete
+        let deleteIndex;  //delete
+
         const arrEm = document.querySelectorAll("tr");
 
         arrEm.forEach((element) => {
-
+            deleteIndex = 0;  //delete
             createElement.id = element.firstElementChild.firstElementChild.textContent;
             createElement.value = element.lastElementChild.textContent;
             if (arrIncorrectElements.linght !== 0) {
@@ -1979,6 +1998,8 @@
                         createElement.value = "X";
                         indexIncorrectElement = arrIncorrectElements.indexOf(incorrectElement);
                         arrIncorrectElements.splice(indexIncorrectElement, 1);
+
+                        deleteIndex = 1;  //delete
                     }
                 });
             }
@@ -1990,6 +2011,8 @@
                         createElement.value = "X";
                         indexElementException = arrExceptions.indexOf(elementException);
                         arrExceptions.splice(indexElementException, 1);
+
+                        deleteIndex = 1;  //delete
                     }
                 });
             }
@@ -2002,10 +2025,224 @@
             let freeSpace = "&nbsp;".repeat(count);
             document.getElementById(`${createElement.id}`).innerHTML = freeSpace + createElement.value;
 
+            if (deleteIndex == 0) {    //delete
+                arrDataForPat.push(createElement.id);  //delete
+            }   //delete
+
         });
+
+
+
+        function Pat() {                     //delete all function
+            let arrForPat = [];
+
+            arrDataForPat.forEach((elementArrDataForPat) => {
+                document.getElementById(`${elementArrDataForPat}`).className += ' pat';
+            })
+
+            let arrPat = document.querySelectorAll(".pat");
+            arrPat.forEach((elementPat) => {
+                let elementArrForPat = {};
+                elementArrForPat.variable = elementPat.id;
+                elementArrForPat.value = elementPat.innerText.trim().split("").length;
+                arrForPat.push(elementArrForPat);
+            })
+            console.log(arrForPat);
+        }
 
     </script>
 
 </body>
 
 </html>
+
+<script class="Pats array"> //delete whole array
+    const arrForPat = [
+        { variable: 'code', value: 10 }
+        ,
+        { variable: 'wavelengthtitlefield', value: 16 }
+        ,
+        { variable: 'wavelengthfirstnamefield', value: 40 }
+        ,
+        { variable: 'wavelengthfamilynamefield', value: 40 }
+        ,
+        { variable: 'wavelengthpreviousnamefield', value: 33 }
+        ,
+        { variable: 'wavelengthdateofbirthfield', value: 54 }
+        ,
+        { variable: 'wavelengthotherresidencystatusfield', value: 23 }
+        ,
+        { variable: 'wavelengthaddressfield', value: 137 }
+        ,
+        { variable: 'wavelengthcountyfield', value: 32 }
+        ,
+        { variable: 'wavelengthpostcodefield', value: 22 }
+        ,
+        { variable: 'wavelengthlondonboroughfield', value: 28 }
+        ,
+        { variable: 'wavelengthphonenumberfield', value: 17 }
+        ,
+        { variable: 'wavelengthemailfield', value: 34 }
+        ,
+        { variable: 'wavelengthapplicantsigndate', value: 26 }
+        ,
+        { variable: 'wavelengthinterviewphonefield', value: 16 }
+        ,
+        { variable: 'wavelengthinterviewemailfield', value: 40 }
+        ,
+        { variable: 'wavelengthknowapplicantfield', value: 118 }
+        ,
+        { variable: 'wavelengthreferrertitlefield', value: 17 }
+        ,
+        { variable: 'wavelengthreferrerfirstnamefield', value: 40 }
+        ,
+        { variable: 'wavelengthreferrerfamilynamefield', value: 63 }
+        ,
+        { variable: 'wavelengthreferrerjobfield', value: 63 }
+        ,
+        { variable: 'wavelengthreferrerbodyfield', value: 42 }
+        ,
+        { variable: 'wavelengthotherbodyfield', value: 27 }
+        ,
+        { variable: 'wavelengthcharitynumberfield', value: 17 }
+        ,
+        { variable: 'wavelengthdepartmentfield', value: 55 }
+        ,
+        { variable: 'wavelengthreferreraddressfield', value: 69 }
+        ,
+        { variable: 'wavelengthreferrercountyfield', value: 23 }
+        ,
+        { variable: 'wavelengthreferrerpostcodefield', value: 26 }
+        ,
+        { variable: 'wavelengthreferrerphonenumberfield', value: 51 }
+        ,
+        { variable: 'wavelengthreferrermobilenumberfield', value: 51 }
+        ,
+        { variable: 'wavelengthreferreremailfield', value: 46 }
+        ,
+        { variable: 'wavelengthreferrersigndate', value: 16 }
+        ,
+        { variable: 'wavelengthotherheardaboutfield', value: 53 }
+        ,
+        { variable: 'wavelengthoutcomefield', value: 89 }
+        ,
+        { variable: 'wavelengthhousingtypefield', value: 61 }
+        ,
+        { variable: 'wavelengthorganisationnamefield', value: 50 }
+        ,
+        { variable: 'wavelengthorganisationspecialism', value: 42 }
+        ,
+        { variable: 'wavelengthmovingonfield', value: 64 }
+        ,
+        { variable: 'wavelengthwhyyoucannotfield', value: 198 }
+        ,
+        { variable: 'Is_the_applicant_disabled', value: 66 }
+        ,
+        { variable: 'wavelengthapplicantdisabledinformationfield', value: 198 }
+        ,
+        { variable: 'wavelengthdeliverynamefield', value: 65 }
+        ,
+        { variable: 'wavelengthdifficultdeliveryfield', value: 66 }
+        ,
+        { variable: 'wavelengthwhyneed', value: 414 }
+        ,
+        { variable: 'wavelengthwhathappened', value: 111 }
+        ,
+        { variable: 'wavelengthwhopays', value: 31 }
+        ,
+        { variable: 'wavelengthaerialprovision', value: 63 }
+        ,
+        { variable: 'wavelengthlicenceexpirefield', value: 9 }
+        ,
+        { variable: 'wavelengthtvlicenceprovision', value: 65 }
+        ,
+        { variable: 'Name0', value: 11 }
+        ,
+        { variable: 'Age0', value: 5 }
+        ,
+        { variable: 'Relationshiptotheapplicant0', value: 15 }
+        ,
+        { variable: 'Employmentifany0', value: 13 }
+        ,
+        { variable: 'Benefitsreceivedandamountifany0', value: 11 }
+        ,
+        { variable: 'Weeklycontributiontohousehold0', value: 12 }
+        ,
+        { variable: 'Name1', value: 11 }
+        ,
+        { variable: 'Age1', value: 5 }
+        ,
+        { variable: 'Relationshiptotheapplicant1', value: 15 }
+        ,
+        { variable: 'Employmentifany1', value: 13 }
+        ,
+        { variable: 'Benefitsreceivedandamountifany1', value: 11 }
+        ,
+        { variable: 'Weeklycontributiontohousehold1', value: 12 }
+        ,
+        { variable: 'Name2', value: 11 }
+        ,
+        { variable: 'Age2', value: 5 }
+        ,
+        { variable: 'Relationshiptotheapplicant2', value: 15 }
+        ,
+        { variable: 'Employmentifany2', value: 13 }
+        ,
+        { variable: 'Benefitsreceivedandamountifany2', value: 11 }
+        ,
+        { variable: 'Weeklycontributiontohousehold2', value: 12 }
+        ,
+        { variable: 'wavelengthhowmuchcontact', value: 552 }
+        ,
+        { variable: 'wavelengthfamilysupport', value: 552 }
+        ,
+        { variable: 'wavelengthpaidemployment', value: 67 }
+        ,
+        { variable: 'wavelengthpreviousemployment', value: 49 }
+        ,
+        { variable: 'Savingsinpounds0', value: 10 }
+        ,
+        { variable: 'CapitalHoldingsinpounds0', value: 10 }
+        ,
+        { variable: 'Investmentsinpounds0', value: 10 }
+        ,
+        { variable: 'Pensionsinpounds0', value: 10 }
+        ,
+        { variable: 'Creditor0', value: 22 }
+        ,
+        { variable: 'ReasonforNatureofdebt0', value: 22 }
+        ,
+        { variable: 'Amountinpounds0', value: 14 }
+        ,
+        { variable: 'Benefitname0', value: 22 }
+        ,
+        { variable: 'Amountpleasespecifyperweekorpermonth0', value: 17 }
+        ,
+        { variable: 'Reviewdate0', value: 18 }
+        ,
+        { variable: 'Charity0', value: 12 }
+        ,
+        { variable: 'ReasonObjectiveofapplication0', value: 23 }
+        ,
+        { variable: 'Amountrequestedgiven0', value: 19 }
+        ,
+        { variable: 'Outcomeifknown0', value: 15 }
+        ,
+        { variable: 'Charity1', value: 12 }
+        ,
+        { variable: 'ReasonObjectiveofapplication1', value: 23 }
+        ,
+        { variable: 'Amountrequestedgiven1', value: 19 }
+        ,
+        { variable: 'Outcomeifknown1', value: 15 }
+        ,
+        { variable: 'Charity2', value: 12 }
+        ,
+        { variable: 'ReasonObjectiveofapplication2', value: 23 }
+        ,
+        { variable: 'Amountrequestedgiven2', value: 19 }
+        ,
+        { variable: 'Outcomeifknown2', value: 15 }
+    ]
+
+</script>
