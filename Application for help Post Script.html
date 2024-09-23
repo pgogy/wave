@@ -1,21 +1,21 @@
-<html>
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
-    <style type="text/css">
+    <style>
         @font-face {
-            font-family: DINRoundProB;
+            font-family: DINRoundProB, sans-serif;
             src: url(DINRoundPro-Bold.otf);
         }
 
         @font-face {
-            font-family: DINRoundProM;
+            font-family: DINRoundProM, sans-serif;
             src: url(DINRoundPro-Medium.otf);
         }
 
         @font-face {
-            font-family: DINRoundProL;
+            font-family: DINRoundProL, sans-serif;
             src: url(DINRoundPro-Light.otf);
         }
 
@@ -31,7 +31,7 @@
 
 
         h1 {
-            font-family: DINRoundProB;
+            font-family: DINRoundProB, sans-serif;
             font-size: 2.3vw;
             color: rgb(57, 172, 112);
             margin-top: 0;
@@ -39,7 +39,7 @@
         }
 
         h2 {
-            font-family: DINRoundProB;
+            font-family: DINRoundProB, sans-serif;
             font-size: 1.97vw;
             color: rgb(57, 172, 112);
             margin-top: 0;
@@ -47,7 +47,7 @@
         }
 
         p {
-            font-family: DINRoundProL;
+            font-family: DINRoundProL, sans-serif;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 1.525vw;
@@ -78,7 +78,6 @@
             border: .2vw solid rgb(57, 172, 112);
             border-radius: 25px;
             padding: 3vw;
-            margin-top: 1vw;
             margin-top: 1.8vw;
 
         }
@@ -177,7 +176,7 @@
         }
 
         .bold {
-            font-family: DINRoundProM;
+            font-family: DINRoundProM, sans-serif;
         }
 
         .flex {
@@ -205,7 +204,7 @@
         }
 
         #ml0 {
-            margin-left: 0vw;
+            margin-left: 0;
         }
 
         .ml {
@@ -225,7 +224,7 @@
         }
 
         .last {
-            font-family: DINRoundProL;
+            font-family: DINRoundProL, sans-serif;
             font-size: 1.2vw;
             color: rgb(57, 172, 112);
         }
@@ -348,7 +347,7 @@
 
         .relative-object {
             position: absolute;
-            font-family: Traveling;
+            font-family: Traveling, sans-serif;
             font-size: 1.7vw;
             color: rgb(82, 6, 153);
         }
@@ -375,7 +374,7 @@
             cursor: pointer;
         }
     </style>
-
+    <title>WaveLength Form Test</title>
 </head>
 
 <!-- hard coded the body style in -->
@@ -385,12 +384,12 @@
     <div class="application">
         <div class="page1">
             <div class="string s0">
-                <img id="mainImage" src="./Application for help Post Scropt_files/fightloneliness.png">
+                <img alt="Main WaveLength Logo" id="mainImage" src="fightloneliness.png">
                 <div class="c1">
                     <p style="font-size: 4vw;position: absolute;left: -10vw;top: -5vw;letter-spacing: -.5vw;">CODE</p>
-                    <p id="code" class="relative-object" style="font-size: 4vw;font-family: DINRoundProL;top: -5vw;font-weight: 300;">HjPYeyqC7v</p>
+                    <p id="code" class="relative-object" style="font-size: 4vw;font-family: DINRoundProL, sans-serif;top: -5vw;font-weight: 300;">HjPYeyqC7v</p>
                 </div>
-                <img id="image" src="./Application for help Post Scropt_files/wave.png">
+                <img alt="Wavelength form image of a green wavy line" id="image" src="wave.png">
             </div>
             <h1>
                 <!-- Page 1 of 9Form updated 12-2023For office use onlyDate received Approved by Date approved Equipment
@@ -1986,7 +1985,7 @@
             }
 
             // dataObj is a JSON object with all of the data in. This used to be in your table, but I extracted it out for speed and making it easier to read
-            Object.keys(dataObj).forEach((id, value) => {
+            Object.keys(dataObj).forEach((id) => {
 
                 // check the ID exists, they all do, but this was to make sure / error check
                 if(document.getElementById(id)!==null) {
@@ -2017,22 +2016,19 @@
 
                                 // Check for NBSP
 
-                                let valueToEnter = addNbsp(nbspObj[id]) + stringLength(id);
-                                document.getElementById(id).innerHTML = valueToEnter;
+                                document.getElementById(id).innerHTML = addNbsp(nbspObj[id]) + stringLength(id);
 
                             } else if (-1 !== Object.keys(nbspSearchObj).indexOf(id.replace(/[0-9]/g, ''))) {
 
                                 // check if it is NBSP and in a table
 
-                                let valueToEnter = addNbsp(nbspSearchObj[id]) + stringLength(id);
-                                document.getElementById(id).innerHTML = valueToEnter;
+                                document.getElementById(id).innerHTML = addNbsp(nbspSearchObj[id]) + stringLength(id);
 
                             } else {
 
                                 // Has no NBSP
 
-                                let valueToEnter = stringLength(id);
-                                document.getElementById(id).innerHTML = valueToEnter;
+                                document.getElementById(id).innerHTML = stringLength(id);
 
                             }
                             break;
